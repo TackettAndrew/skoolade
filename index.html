@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Skool-Ade LMS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <head profile="http://www.w3.org/2005/10/profile">
+        <link rel="icon" type="image/png" href="images/logo3.png">
+    </head>
+    <body>
+
+        <!--THE NAV-->
+        <iframe class="nav" src="iframes/nav.html"></iframe>
+        
+        <!--THE CONTENT-->
+        <div class="onecolp" id="content">
+            <div style="height: 30px;"></div>
+            <div class="onecolpIMGcon">
+                <img class="inline-block onecolpIMG" src="images/SKOOLADE.png">
+            </div>
+            <p class="montserrat center" style="color: #444; font-size: 30px;">
+                The Customizable, simple, spreadsheet based SIS
+            </p>
+            <div class="onecolpIMGcon">
+                <img class="inline-block onecolpIMG IMGboxshadow" src="images/welcome2.png">
+            </div>
+            <div style="height: 30px;"></div>
+            <p class="montserrat center" style="color: #444;">
+                Features attendance with customizable conditions...
+            </p>
+            <div class="onecolpIMGcon">
+                <img class="inline-block onecolpIMG IMGboxshadow" src="images/attendance2.png">
+            </div>
+            <div style="height: 30px;"></div>
+            <p class="montserrat center" style="color: #444;">
+                ...A comprehensive gradebook with customizable point thresholds...
+            </p>
+            <div class="onecolpIMGcon">
+                <img class="inline-block onecolpIMG IMGboxshadow" src="images/grades2.png">
+            </div>
+            <div style="height: 30px;"></div>
+            <p class="montserrat center" style="color: #444;">
+                ...A flexible system for managing student information...
+            </p>
+            <div class="onecolpIMGcon">
+                <img class="inline-block onecolpIMG IMGboxshadow" src="images/sis2.png">
+            </div>
+            <p class="montserrat center" style="color: #444;">
+                ...And more.
+            </p>
+            <h1 class="montserrat" style="text-align: center;">Buy Our Product</h1>
+            <div style="height: 30px;"></div>
+            <div class="half">
+                <input type="button" class="half-buy-button montserrat" value="Coming Soon">
+                <div style="height: 30px;"></div>
+                <h1 class="montserrat half-buy">Buy the base version</h1>
+                <div style="height: 30px;"></div>
+                <h4 class="montserrat" style="color: white;">Includes</h4>
+                <ul style="color: white; text-align: left;">
+                    <li>Attendance</li>
+                    <li>Gradebook</li>
+                    <li>Student Information</li>
+                </ul>
+            </div>
+            <div class="half">
+                <input type="button" class="half-buy-button montserrat" value="Coming Soon">
+                <div style="height: 30px;"></div>
+                <h1 class="montserrat half-buy">Get a Quote for a custom Version</h1>
+                <div style="height: 30px;"></div>
+                <h4 class="montserrat" style="color: white;">Includes</h4>
+                <ul style="color: white; text-align: left;">
+                    <li>All Base Features</li>
+                    <li>Any number of customizable features</li>
+                </ul>
+            </div>
+            <div style="height: 30px; clear: both;"></div>
+        </div>
+        
+        <!--THE FOOTER-->
+        <iframe class="footer-iframe" src="iframes/footer.html"></iframe>
+        
+        <script>
+            window.addEventListener("load", minScreenHeight(), false);
+            var windowHeight = "";
+            function minScreenHeight() {
+                windowHeight = window.innerHeight;
+                var content = document.getElementById("content");
+                content.style.minHeight = (windowHeight - 60 - 91).toString() + "px";
+                console.log(windowHeight);
+            }
+        </script>
+    </body>
+</html>

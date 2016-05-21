@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Skool-Ade LMS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <head profile="http://www.w3.org/2005/10/profile">
+        <link rel="icon" type="image/png" href="images/logo3.png">
+    </head>
+    <body>
+
+        <!--THE NAV-->
+        <iframe class="nav" src="iframes/nav.html"></iframe>
+        
+        <!--THE CONTENT-->
+        <div class="onecolp" id="content">
+            <div style="height: 30px;"></div>
+            For customer support, please send an eMail to www.skooladesisystems@gmail.com
+        </div>
+        
+        <!--THE FOOTER-->
+        <iframe class="footer-iframe" src="iframes/footer.html"></iframe>
+        
+        <script>
+            window.addEventListener("load", minScreenHeight(), false);
+            var windowHeight = "";
+            function minScreenHeight() {
+                windowHeight = window.innerHeight;
+                var content = document.getElementById("content");
+                content.style.minHeight = (windowHeight - 60 - 91).toString() + "px";
+                console.log(windowHeight);
+            }
+        </script>
+    </body>
+</html>
